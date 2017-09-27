@@ -1,0 +1,36 @@
+﻿.UserAvatarDiv {
+    border-radius: 5px;
+    margin: 3px;
+    padding: 1em;
+    height: 210px;
+    width: 150px;
+    text-align: center
+}
+
+.userAvatarImgdefault {
+    width: 85px;
+    height: 85px;
+    margin: 10px
+}
+
+.userAvatarName {
+    font-size: 14px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 0
+}
+
+.userAvatarUserName {
+    font-size: 14px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 0
+}
+
+.userAvatarBtn {
+    width: 120px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: smaller
+}

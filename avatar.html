@@ -1,0 +1,12 @@
+﻿<div class="row UserAvatarDiv" ng-if="$ctrl.show">
+    <img class="img-circle" ng-style="{'width': $ctrl.imgSize + 'px','width': $ctrl.imgSize + 'px','margin': '8px'}" ng-src="{{$ctrl.src}}" />  
+    <div>
+        <i ng-if="$ctrl.onlineStatus && $ctrl.showOnlineStatus" class="fa fa-user" style="color:green"></i>
+        <span ng-if="$ctrl.onlineStatus && $ctrl.showOnlineStatus" class="menu-text animated infinite fadeIn" style="color:green">Online</span>
+        <i ng-if="!$ctrl.onlineStatus && $ctrl.showOnlineStatus" class="fa fa-user" style="color:red"></i>
+        <span ng-if="!$ctrl.onlineStatus && $ctrl.showOnlineStatus" class="menu-text" style="color:red">Offline</span>
+    </div> 
+    <h4 ng-show="$ctrl.showName">{{$ctrl.name}}</h4>
+    <p class="userAvatarUserName" ng-show="$ctrl.showUserName">{{$ctrl.userName}}</p>
+    <button ng-if="$ctrl.includeFollowButton" type="button" ng-click="$ctrl.followTheUser()" class="btn btn-sm userAvatarBtn">Follow</button>
+</div>
